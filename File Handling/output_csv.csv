@@ -1,0 +1,6 @@
+PARCEL_ID,OWNER,ACREAGE,TYPE,SQ_FT,CHECK,DUPLICATE
+1003,Claudia,5.2,Residential,226512.0,CHECK,
+1004,Darryl,4.3,Commercial,187308.0,,
+1005,Esther,3.2,Residential,139392.0,CHECK,
+1001,Andrew,2.5,Residential,108900.0,CHECK,Y
+1001,Graham,1.5,Residential,65340.0,CHECK,Y
