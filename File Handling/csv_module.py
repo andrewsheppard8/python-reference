@@ -56,8 +56,8 @@ with open(input_file, "r") as infile:
 parcel_counts = Counter(row["PARCEL_ID"] for row in rows)
 
 
-# Step 3: Sort rows by acreage (descending)
-rows.sort(key=lambda x: float(x["ACREAGE"]), reverse=True)
+# Step 3: Sort rows first by type (all Residential Parcels first) & by acreage (descending)
+rows.sort(key=lambda x: (x["TYPE"] != "Residential", -float(x["ACREAGE"])))
 
 # Step 4: Write processed CSV
 with open(output_file, "w", newline="") as outfile:
